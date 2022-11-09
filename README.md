@@ -1,4 +1,4 @@
-# HTML5-Canvas-Pong
+# HTML5-Canvas-Pong  **Bugs after deployment
 
 AI paddle is hidden behind scrollbar. \*Hard coded in the height and width on the HTML side
 
