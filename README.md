@@ -1,7 +1,7 @@
-# HTML5-Canvas-Pong  **Bugs after deployment
+# HTML5-Canvas-Pong
 
-AI paddle is hidden behind scrollbar. \*Hard coded in the height and width on the HTML side
+Use ArrowUp and ArrowDown to control the left paddle.
 
-Player paddle lost mouse control upon deployment. \*Don't understand why this one isn't working now
+Collision is much worse on the left paddle for some reason so direct close calls mostly end up being a computer score.
 
-It was a fun mini project that worked previously. Maybe I circle back to fix after finishing more important lessons / projects.
+Didn't put much effort in this. Just wanted to play around with HTML5 Canvas.

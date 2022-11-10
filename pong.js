@@ -40,6 +40,9 @@ window.onload = () => {
   canvas = document.getElementById('pongCanvas');
   ctx = canvas.getContext('2d');
 
+  canvas.width = window.innerWidth - 20;
+  canvas.height = window.innerHeight - 20;
+
   var framesPerSecond = 30;
   setInterval(() => {
     move();
@@ -48,9 +51,13 @@ window.onload = () => {
 
   canvas.addEventListener('mousedown', handleMouseClick);
 
-  canvas.addEventListener('mousemove', (evt) => {
-    var mousePos = mousePos(evt);
-    lPaddleY = mousePos.y - PADDLE_HEIGHT / 2;
+  window.addEventListener('keydown', (evt) => {
+    if (evt.key === 'ArrowUp') {
+      lPaddleY -= 20;
+    }
+    if (evt.key === 'ArrowDown') {
+      lPaddleY += 20;
+    }
   });
 };
 
